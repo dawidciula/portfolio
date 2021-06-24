@@ -1,0 +1,13 @@
+.portraitPhoto {
+    width: 457px;
+    height: 457px;
+    border: 2px solid black;
+    border-radius: 1000px;
+    float: right;
+    position: relative;
+    top: -100px;
+    right: -100px;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
