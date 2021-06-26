@@ -2,4 +2,11 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.centerContainer {
+    display: flex;
+    flex-direction: column;
 }

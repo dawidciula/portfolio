@@ -10,7 +10,12 @@ import './MainPagePhotos.css'
 function MainPagePhotos() {
     return (
         <div className='photoContainer'>
-        <PhotoBox image={photo1}></PhotoBox>
+        <PhotoBox image={photo1} whichSide='left'></PhotoBox>
+        <div className='centerContainer'>
+        <PhotoBox image={photo2} whichSide='center'></PhotoBox>
+        <PhotoBox image={photo3} whichSide='center'></PhotoBox>
+        </div>
+        <PhotoBox image={photo4} whichSide='right'></PhotoBox>
         </div>
     );
 }

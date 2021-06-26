@@ -1,5 +1,8 @@
 @import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap');
 
 body {
     overflow-x: hidden;
+    background-color: #F8F9FA;
+    font-family: 'Merriweather', serif;
 }

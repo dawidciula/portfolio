@@ -1,5 +1,25 @@
-.pictureBox {
-    width: 44.270833333333336vw;
-    height: 310px;
-    border: 2px solid black;
+.left, .center, .right {
+    border: 2px solid black; 
+}
+
+.left {
+    width: 838px;
+    height: 220px; 
+}
+
+.center {
+    width: 542px;
+    height: 103px;
+    margin-left: 10px;
+    background-size: 100px;
+}
+
+.right {
+    width: 488px;
+    height: 220px;
+    margin-left: 10px;
+}
+
+.center:nth-of-type(1) {
+    margin-bottom: 10px;
 }

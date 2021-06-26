@@ -4,7 +4,7 @@ import './PhotoBox.css'
 function PhotoBox(props) {
     return (
         <img 
-        className='pictureBox'
+        className={props.whichSide}
         alt='pictureBox'
         src={props.image}
         />
