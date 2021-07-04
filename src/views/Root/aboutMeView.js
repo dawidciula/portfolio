@@ -1,8 +1,7 @@
-import React from 'react'
+import React from "react";
 
-
-const AboutMeView = () => (
-    <h1>Strona o mnie</h1>
-)
+function AboutMeView() {
+  return <h1>To jest strona o mnie</h1>;
+}
 
 export default AboutMeView;

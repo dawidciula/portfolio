@@ -1,12 +1,12 @@
 .photoContainer {
-    position: absolute;
     bottom: 10px;
     left: 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     width: 100%;
 }
 
 .centerContainer {
-    display: flex;
+    display: grid;
     flex-direction: column;
 }

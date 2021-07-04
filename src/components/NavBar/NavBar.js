@@ -1,35 +1,42 @@
-import React from 'react';
-import NavBarHeader from '../NavBarHeader/NavBarHeader';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './NavBar.css';
-import AboutMeView from '../../views/Root/aboutMeView';
-import ContactView from '../../views/Root/ContactView';
-import PhotoGalleryView from '../../views/Root/PhotoGalleryView';
-import { Link } from 'react-router-dom'
+import React, { Component } from "react";
+import NavBarHeader from "../NavBarHeader/NavBarHeader";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import "./NavBar.css";
+import AboutMeView from "../../views/Root/aboutMeView";
+import ContactView from "../../views/Root/ContactView";
+import PhotoGalleryView from "../../views/Root/PhotoGalleryView";
 
-function NavBar() {
-    return (
-        <BrowserRouter >
-            <div className='wrapper'>
-            
-            <Link href='/About'>
-                <NavBarHeader  className='aboutMe' text='O mnie' > </NavBarHeader>
-            </Link>
-            <Link href='/PhotoGallery'>
-                <NavBarHeader text='Galeria'></NavBarHeader>
-            </Link>
-            <Link href='/About'>
-                <NavBarHeader text='Kontakt'></NavBarHeader>
-            </Link>
-            <Switch>
-            <Route path='/About' component={AboutMeView}/>
-            <Route path='/Contact' component={ContactView}/>
-            <Route path='/PhotoGallery' component={PhotoGalleryView} />
-            </Switch>
-            
-            </div>
-        </BrowserRouter>
-    )
+class NavBar extends Component {
+    render(){
+  return (
+    <BrowserRouter>
+    <div>
+      <ul className="wrapper">
+        <li>
+          <Link to="/about" target="_blank">O mnie</Link>
+        </li>
+        <li>
+          <Link to="/gallery">Galeria</Link>
+        </li>
+        <li>
+          <Link to="/contact">Kontakt</Link>
+        </li>
+      </ul>
+
+      <Switch>
+        <Route exact path="/about">
+          <AboutMeView />
+        </Route>
+        <Route exact path="/contact">
+          <ContactView />
+        </Route>
+        <Route exact path="/gallery">
+          <PhotoGalleryView />
+        </Route>
+      </Switch>
+      </div>
+    </BrowserRouter>
+  );
 }
-
-export default NavBar
+}
+export default NavBar;
