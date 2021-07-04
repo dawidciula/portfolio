@@ -4,7 +4,7 @@ import './MainHeader.css';
 function MainHeader() {
     return (
         <div className='headerContainer'>
-        <h1>Imię Nazwisko</h1>
+        <h1>Izabela Janikowska</h1>
         </div>
     );
 }

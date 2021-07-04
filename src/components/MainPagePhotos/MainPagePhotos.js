@@ -9,14 +9,20 @@ import "./MainPagePhotos.css";
 function MainPagePhotos() {
   return (
     <div className="photoContainer">
-      <div>
-        <PhotoBox image={photo1} whichSide="left"></PhotoBox>
+      <div className="grid">
+        <img src={photo1} className="img__photo1" />
       </div>
-      <div className="centerContainer">
-        <PhotoBox image={photo2} whichSide="center"></PhotoBox>
-        <PhotoBox image={photo3} whichSide="center"></PhotoBox>
+      <div className="grid">
+        <img src={photo2} className="img__photo2" />
       </div>
-      <PhotoBox image={photo4} whichSide="right"></PhotoBox>
+      <div className="grid">
+        <img src={photo3} className="img__photo3" />
+      </div>
+      <div className="grid"></div>
+      <div className="grid">
+        <img src={photo4} className="img__photo4" />
+      </div>
+      <div className="grid">6</div>
     </div>
   );
 }
