@@ -4,9 +4,8 @@ import MainPagePhotos from "../../components/MainPagePhotos/MainPagePhotos";
 import MainHeader from "../../components/MainHeader/MainHeader";
 import Description from "../../components/Description/Description";
 import SideHeader from "../../components/SideHeader/SideHeader";
-import { BrowserRouter, Route } from 'react-router-dom';
 
-function App() {
+function Main() {
    return (
      <>
     
@@ -27,4 +26,4 @@ function App() {
    );
 }
 
-export default App;
+export default Main;

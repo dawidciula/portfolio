@@ -1,30 +1,29 @@
-import PortraitPhoto from "../../components/PortraitPhoto/PortraitPhoto";
-import NavBar from "../../components/NavBar/NavBar";
-import MainPagePhotos from "../../components/MainPagePhotos/MainPagePhotos";
-import MainHeader from "../../components/MainHeader/MainHeader";
-import Description from "../../components/Description/Description";
-import SideHeader from "../../components/SideHeader/SideHeader";
-import { BrowserRouter, Route } from "react-router-dom";
 
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import AboutMeView from "./aboutMeView";
+import ContactView from "./ContactView";
+import PhotoGalleryView from "./PhotoGalleryView";
+import Main from "./RootView";
 function App() {
   return (
-    <>
-      <PortraitPhoto />
-      <NavBar />
+    <BrowserRouter>
+   
 
-      <div className="row">
-        <div className="col-6">
-          <MainHeader />
-          <SideHeader />
-          <Description />
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <MainPagePhotos />
-          </div>
-        </div>
-      </div>
-    </>
+      <Switch>
+        <Route exact path="/">
+          <Main />
+          </Route>
+        <Route exact path="/about">
+          <AboutMeView />
+        </Route>
+        <Route exact path="/contact">
+          <ContactView />
+        </Route>
+        <Route exact path="/gallery">
+          <PhotoGalleryView />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 

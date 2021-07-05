@@ -9,11 +9,10 @@ import PhotoGalleryView from "../../views/Root/PhotoGalleryView";
 class NavBar extends Component {
     render(){
   return (
-    <BrowserRouter>
     <div>
       <ul className="wrapper">
         <li>
-          <Link to="/about" target="_blank">O mnie</Link>
+          <Link to="/about">O mnie</Link>
         </li>
         <li>
           <Link to="/gallery">Galeria</Link>
@@ -23,19 +22,8 @@ class NavBar extends Component {
         </li>
       </ul>
 
-      <Switch>
-        <Route exact path="/about">
-          <AboutMeView />
-        </Route>
-        <Route exact path="/contact">
-          <ContactView />
-        </Route>
-        <Route exact path="/gallery">
-          <PhotoGalleryView />
-        </Route>
-      </Switch>
+   
       </div>
-    </BrowserRouter>
   );
 }
 }
