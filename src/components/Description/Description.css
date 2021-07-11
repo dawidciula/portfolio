@@ -2,10 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: justify;
     width: 43.645833333333336vw;
     margin-left: 10px;
     font-size: 15px;
     margin-top: 40px;
     text-align: center;
     line-height: 25px;
+}
+.Description__p{
+    text-align: justify;
 }

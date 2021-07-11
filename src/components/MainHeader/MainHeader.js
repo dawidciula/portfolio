@@ -4,7 +4,7 @@ import './MainHeader.css';
 function MainHeader() {
     return (
         <div className='headerContainer'>
-        <h1>Izabela Janikowska</h1>
+        <h1>Natalia Strzelec</h1>
         </div>
     );
 }
