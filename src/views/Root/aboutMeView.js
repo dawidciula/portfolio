@@ -1,8 +1,9 @@
 import React from "react";
+import NavBar from '../../components/NavBar/NavBar';
 
 function AboutMeView() {
   return (
-  <h1>To jest strona o mnie</h1>
+  <NavBar></NavBar>
   )
 }
 

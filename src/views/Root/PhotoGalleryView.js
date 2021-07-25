@@ -1,7 +1,10 @@
 import React from "react";
+import NavBar from '../../components/NavBar/NavBar';
 
 function PhotoGalleryView() {
-  return <h1>Galeria zdjęć</h1>;
+  return (
+    <NavBar></NavBar>
+  );
 }
 
 export default PhotoGalleryView;

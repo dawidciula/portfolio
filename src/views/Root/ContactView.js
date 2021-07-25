@@ -1,7 +1,10 @@
 import React from "react";
+import NavBar from '../../components/NavBar/NavBar';
 
 function ContactView() {
-  return <h1>Kontakt do mnie</h1>;
+  return (
+    <NavBar></NavBar>
+  )
 }
 
 export default ContactView;
